@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  orderQueue:
+    image: rabbitmq:management
+    container_name: orderQueue
+    hostname: orderQueue
+    ports:
+      - "5672:5672"  # AMQP
+      - "15672:15672" # RabbitMQ Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  taking-api:
+    image: orderpub
+    container_name: orderpubContainer
+    depends_on:
+      - orderQueue
+    environment:
+      SPRING_RABBITMQ_HOST: orderQueue
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+    ports:
+      - "8080:8080"
