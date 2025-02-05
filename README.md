@@ -5,7 +5,7 @@ Java Technical Assessment based on Installment Orders. It's focus on MS architec
 ![melita-orders-flow](https://github.com/user-attachments/assets/3e92c22e-03be-4d1c-a64a-c0e9b55bf57f)
 
 # Architecture
-![melita-orders-test-architecture](https://github.com/user-attachments/assets/3708a7aa-130c-4fdf-a488-ab6022e6e9aa)
+![melita-orders-test-architecture](https://github.com/user-attachments/assets/e75d2f3a-7a09-4567-b6b2-61211f21b68e)
 
 # Source code folders
 ![melita-orders-test-repo](https://github.com/user-attachments/assets/788cb5f3-3bff-4b26-a711-25e9cb77f702)
